@@ -1,4 +1,5 @@
 ﻿using DurandalAuth.Domain.UnitOfWork;
+using DurandalAuth.Web.App_Start;
 using StructureMap;
 using System;
 using System.Collections.Generic;
@@ -29,7 +30,8 @@ namespace DurandalAuth.Web
             RouteConfig.RegisterMVCRoutes(RouteTable.Routes);
             AuthConfig.RegisterMVCAuth(GlobalFilters.Filters);
             AuthConfig.RegisterWebApiAuth(GlobalConfiguration.Configuration);
-            AuthConfig.RegisterOAuth();            
+            AuthConfig.RegisterOAuth();
+            FiltersConfig.RegisterMVCGlobalFilters(GlobalFilters.Filters);
             BundleConfig.RegisterBundles(BundleTable.Bundles);            
 
             if (!WebSecurity.Initialized)

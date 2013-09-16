@@ -210,12 +210,15 @@
   <ItemGroup>
     <Compile Include="App_Start\AuthConfig.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\FiltersConfig.cs" />
     <Compile Include="App_Start\StructuremapMvc.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\HtmlSnapshotController.cs" />
     <Compile Include="Controllers\MetadataController.cs" />
     <Compile Include="Controllers\DurandalAuthController.cs" />
+    <Compile Include="Filters\CrawlableAttribute .cs" />
     <Compile Include="Helpers\LookupBundle.cs" />
     <Compile Include="DependencyResolution\StructureMapDependencyResolver.cs" />
     <Compile Include="DependencyResolution\StructureMapDependencyScope.cs" />
@@ -235,6 +238,10 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="..\packages\phantomjs.exe.1.8.1\tools\phantomjs\phantomjs.exe">
+      <Link>phantomjs.exe</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="App\main-built.js" />
     <Content Include="App\model\modelBuilder.js" />
     <Content Include="App\services\privatearticlerepository.js" />
@@ -332,6 +339,7 @@
     <Content Include="Scripts\durandal\viewEngine.js" />
     <Content Include="Scripts\durandal\viewLocator.js" />
     <Content Include="Scripts\jquery.hammer.min.js" />
+    <Content Include="Scripts\seo\createSnapshot.js" />
     <Content Include="Scripts\Stashy.js" />
     <Content Include="Scripts\Stashy.min.js" />
     <Content Include="weyland-config.js" />
@@ -374,6 +382,7 @@
     <Content Include="Scripts\_references.js" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Web.config" />
+    <Content Include="Views\HtmlSnapshot\GetHTML.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
