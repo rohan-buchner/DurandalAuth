@@ -310,7 +310,7 @@
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="phantomjs.exe">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
