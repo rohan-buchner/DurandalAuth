@@ -8,7 +8,7 @@
         attached : function() {
             $(document).find("footer").show();
         },
-
+        
         activate: function () {
             var self = this;            
 
@@ -62,6 +62,10 @@
                         .activate({ pushState : true });
                     })
                     .fail(self.handlevalidationerrors);
+        },
+
+        compositionComplete: function () {
+            $("body").append("<span id='compositionComplete'></span>");
         }
     };
 
