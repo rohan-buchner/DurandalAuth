@@ -238,10 +238,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="..\packages\phantomjs.exe.1.8.1\tools\phantomjs\phantomjs.exe">
-      <Link>phantomjs.exe</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
     <Content Include="App\main-built.js" />
     <Content Include="App\model\modelBuilder.js" />
     <Content Include="App\services\privatearticlerepository.js" />
@@ -313,6 +309,9 @@
     <Content Include="Content\zen-form.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
+    <Content Include="phantomjs.exe">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -339,7 +338,7 @@
     <Content Include="Scripts\durandal\viewEngine.js" />
     <Content Include="Scripts\durandal\viewLocator.js" />
     <Content Include="Scripts\jquery.hammer.min.js" />
-    <Content Include="Scripts\seo\createSnapshot.js" />
+    <Content Include="Scripts\seo\renderHTML.js" />
     <Content Include="Scripts\Stashy.js" />
     <Content Include="Scripts\Stashy.min.js" />
     <Content Include="weyland-config.js" />

@@ -62,10 +62,6 @@
                         .activate({ pushState : true });
                     })
                     .fail(self.handlevalidationerrors);
-        },
-
-        compositionComplete: function () {
-            $("body").append("<span id='compositionComplete'></span>");
         }
     };
 

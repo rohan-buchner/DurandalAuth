@@ -19,7 +19,7 @@ namespace DurandalAuth.Web.Controllers
 
             var startInfo = new ProcessStartInfo
             {
-                Arguments = String.Format("{0} {1}", Path.Combine(appRoot, "Scripts\\seo\\createSnapshot.js"), url),
+                Arguments = String.Format("{0} {1}", Path.Combine(appRoot, "Scripts\\seo\\renderHTML.js"), url),
                 FileName = Path.Combine(appRoot, "bin\\phantomjs.exe"),
                 UseShellExecute = false,
                 CreateNoWindow = true,
