@@ -15,7 +15,7 @@ namespace DurandalAuth.Web.Controllers
 
         public ActionResult GetHTML(string url)
         {
-            string appRoot = Path.GetDirectoryName(AppDomain.CurrentDomain.BaseDirectory);
+            string appRoot = Server.MapPath("~/");
 
             var startInfo = new ProcessStartInfo
             {
